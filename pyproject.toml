@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resilipy"
+version = "1.0.0"
+authors = [
+  { name = "@xika4", email = "kimshincho2000@users.noreply.github.com" },
+]
+description = "Enterprise Resilience, Chaos Engineering and Dead Route Analysis Framework by @xika4"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = [
+    "fastapi>=0.100.0",
+    "starlette>=0.27.0",
+]
+
+[project.urls]
+"Telegram" = "https://t.me/xika4"
+"Author" = "https://t.me/xika4"
+"Homepage" = "https://github.com/kimshincho2000/resilipy"
+
+[project.scripts]
+resilipy = "resilipy.cli:main"
